@@ -18,12 +18,30 @@
 
 #define AUDIO_INIT_DELAY
 
+#define ALL_STAR_CUSTOM \
+Q__NOTE(_B4), Q__NOTE(_G4), Q__NOTE(_G4), Q__NOTE(_E4), Q__NOTE(_G4), \
+Q__NOTE(_G4), Q__NOTE(_G4), Q__NOTE(_E4), Q__NOTE(_G4), Q__NOTE(_G4), \
+Q__NOTE(_G4), Q__NOTE(_B4), Q__NOTE(_B4), Q__NOTE(_G4), Q__NOTE(_G4), \
+Q__NOTE(_E4), Q__NOTE(_G4), Q__NOTE(_G4), Q__NOTE(_E4), Q__NOTE(_G4), \
+Q__NOTE(_G4), Q__NOTE(_G4), Q__NOTE(_D4), Q__NOTE(_B4), Q__NOTE(_D4), \
+Q__NOTE(_C4), Q__NOTE(_B4), Q__NOTE(_A4), Q__NOTE(_G4), H__NOTE(_G4), \
+Q__NOTE(_G4), Q__NOTE(_G4), Q__NOTE(_A4), Q__NOTE(_G4), Q__NOTE(_B4), \
+Q__NOTE(_A4), Q__NOTE(_A4), Q__NOTE(_G4), Q__NOTE(_A4), Q__NOTE(_B4), \
+Q__NOTE(_E4),
+
+#define JINGLE_BELLS \
+Q__NOTE(_E4), Q__NOTE(_E4), H__NOTE(_E4), Q__NOTE(_E4), Q__NOTE(_E4), \
+H__NOTE(_E4), Q__NOTE(_E4), Q__NOTE(_G4), Q__NOTE(_C4), Q__NOTE(_D4), \
+W__NOTE(_E4), Q__NOTE(_F4), Q__NOTE(_F4), Q__NOTE(_F4), Q__NOTE(_F4), \
+Q__NOTE(_F4), Q__NOTE(_E4), Q__NOTE(_E4), Q__NOTE(_E4), Q__NOTE(_E4), \
+Q__NOTE(_D4), Q__NOTE(_D4), Q__NOTE(_E4), H__NOTE(_D4), H__NOTE(_G4),
+
 #define ODE_TO_JOY Q__NOTE(_E4), Q__NOTE(_E4), Q__NOTE(_F4), Q__NOTE(_G4), Q__NOTE(_G4), Q__NOTE(_F4), Q__NOTE(_E4), Q__NOTE(_D4), Q__NOTE(_C4), Q__NOTE(_C4), Q__NOTE(_D4), Q__NOTE(_E4), QD_NOTE(_E4), E__NOTE(_D4), H__NOTE(_D4),
 
 
 // Startup sound
 #ifdef AUDIO_ENABLE
-#    define STARTUP_SONG SONG(ODE_TO_JOY)
+#    define STARTUP_SONG SONG(ALL_STAR_CUSTOM)
 // #define STARTUP_SONG SONG(NO_SOUND)
 
 #    define DEFAULT_LAYER_SONGS \
